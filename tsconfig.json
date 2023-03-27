@@ -1,8 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["es5", "dom"],
-    "types": ["cypress"]
+    "target": "es6",
+    "lib": ["dom", "dom.iterable", "esnext"],
   },
-  "include": ["./cypress/**/*.ts"]
+  "include": ["./cypress/**/*.ts",]
 }
