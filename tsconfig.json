@@ -2,6 +2,8 @@
   "compilerOptions": {
     "target": "es6",
     "lib": ["dom", "dom.iterable", "esnext"],
+    "moduleResolution": "node",
+    "baseUrl": ".",
   },
   "include": ["./cypress/**/*.ts",]
 }
