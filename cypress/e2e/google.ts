@@ -1,6 +1,6 @@
-import { Given, When, Then, And, But, Before, After } from "@badeball/cypress-cucumber-preprocessor";
+import { Given, When, Then, Before, After } from "@badeball/cypress-cucumber-preprocessor";
 
-Before(() => {
+Before({ tags: "@google" }, () => {
   cy.clearCookies();
   cy.clearLocalStorage();
 });
@@ -31,7 +31,7 @@ Then("タイトルに {string} が含まれない", (unwantedTerm: string) => {
   cy.title().should("not.include", unwantedTerm);
 });
 
-After(() => {
+After({ tags: "@google" }, () => {
   cy.clearCookies();
   cy.clearLocalStorage();
 });

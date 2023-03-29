@@ -1,6 +1,7 @@
 Feature: Access Google
   Google 検索のテスト
 
+  @google
   Scenario: Googleで検索する
     Given google.com にアクセスする
     Then タイトルに Google がある
