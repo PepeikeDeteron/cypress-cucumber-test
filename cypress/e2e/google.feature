@@ -1,5 +1,4 @@
-Feature: Access Google
-  Google 検索のテスト
+Feature: Google 検索のテスト
 
   @google
   Scenario: Googleで検索する
